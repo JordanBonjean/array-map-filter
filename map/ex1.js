@@ -21,7 +21,21 @@ En sortie: [
 
  */
 
-function getStringsLength(strings) {
+//   const food = [
+//     'Chicken',
+//     'Bacon',
+//     'Tofu',
+//     'Mayonnaise'
+//   ];
+//   const getStringsLength = food.map((list) => {
+//     return list + " contains " + list.length + " characters ";
+//  }); 
+
+ function getStringsLength(strings) {
+  const food = strings.map(function(list) {
+  return list + " contains " + list.length + " characters";
+}); 
+  return food
 }
 
 // Si besoin, tu peux toujours visualiser le résultat avec console.log,

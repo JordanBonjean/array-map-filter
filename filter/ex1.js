@@ -12,7 +12,13 @@ Sortie attendue:
  */
 
 function getPositiveNumbers(numbers) {
-}
+  const nbPositive = numbers.filter(function(nombres) {
+    if (nombres >= 0) { 
+    return [nombres]
+  }
+  });
+  return nbPositive 
+};
 
 // Si besoin, tu peux toujours visualiser le résultat avec console.log,
 // mais alors, il faut alors lancer l'exercice avec node filter/ex1
